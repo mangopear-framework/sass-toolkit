@@ -1,0 +1,69 @@
+/**
+ * [Tools] Shade and Tint colours
+ *
+ * Sometimes you'll want to provide a shade or tint of a brand colour without wanting
+ * to look up the relevant hexadecimal or RGB colour values.
+ *
+ * These mixins allow you to shade or tint variables, hexadecimal or RGB values easily
+ * from within SASS.
+ *
+ * @package  	mangopear-framework
+ * @category	tools
+ * @version  	0.1.0.alpha
+ * @since   	0.1.0.alpha
+ * @author  	Andi North <andi@mangopear.co.uk>
+ * @link 		https://ui.mangopear.co.uk/
+ * @license   	GNU General Public License <http://opensource.org/licenses/gpl-license.php>
+ */
+
+
+/**
+ * CHANGELOG
+ *
+ * 0.1.0.alpha
+ *          Init file
+ *          Renamed functions & mixins from mangui
+ */
+
+
+/**
+ * CONTENTS
+ *
+ * [1]	Tint
+ * [2]	Shade
+ */
+
+
+/**
+ * [1]	Tint
+ *
+ * 		Using the built in SASS functions, create a more helpful mixin
+ * 		that has simpler, easier syntax for users.
+ *
+ * 		To use:
+ * 		color: @include mangui-tint($green, 10%);
+ * 		background: @include mangui-tint(#F00, 25%);
+ */
+
+@function mf-tint($colour, $percentage) {
+	@return mix($colour, white, (100-$percentage));
+}
+
+
+
+
+
+/**
+ * [2]	Shade
+ *
+ * 		Using the built in SASS functions, create a more helpful mixin
+ * 		that has simpler, easier syntax for users.
+ *
+ * 		To use:
+ * 		color: @include mangui-shade($green, 10%);
+ * 		background: @include mangui-shade(#F00, 25%);
+ */
+
+@function mf-shade($colour, $percentage) {
+	@return mix($colour, black, (100-$percentage));
+}
