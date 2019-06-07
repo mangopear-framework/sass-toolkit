@@ -1,0 +1,66 @@
+/**
+ * SASS Toolkit
+ * 
+ * @package  	mangopear-framework
+ * @category	tooling
+ * @version  	0.2.0.alpha
+ * @since   	0.1.0.alpha
+ * @author  	Andi North <andi@mangopear.co.uk>
+ * @link 		https://ui.mangopear.co.uk/
+ * @license   	GNU General Public License <http://opensource.org/licenses/gpl-license.php>
+ */
+
+
+/**
+ * CHANGELOG
+ *
+ * 0.1.0.alpha
+ *          Init file
+ *
+ * 0.2.0.alpha
+ * 			Updated to support new URL structure after moving to org on npm
+ */
+
+
+/**
+ * CONTENTS
+ *
+ * [1]	Settings
+ * [2]	Tools
+ */
+
+
+/**
+ * [1]	Settings
+ *
+ *   •	Globally available settings and variables
+ *   •	Configure switches
+ *   •	Brand colours
+ */
+
+@import "settings/settings.mangui.defaults";
+@import "settings/settings.mangui.setup";
+
+
+
+
+/**
+ * [2]	Tools
+ *
+ *   •	Globally available tools
+ *   •	Public mixins
+ *   •	Helper functions
+ *
+ *   	[a]	SASS mixin: rempx
+ *   		Converts pixel based values to rem values
+ * 		[b]	SASS mixin: placeholder
+ * 			Outputs browser variants of `:-x-placeholder`
+ * 		[c]	SASS mixin: shade-tint
+ * 			Apply a shade or tint to a colour
+ * 		[d]	Include sass-mq
+ */
+
+@import "tools/tools.rempx";							// [a]
+@import "tools/tools.placeholder";						// [b]
+@import "tools/tools.shade-tint";						// [c]
+@import "../../../../node_modules/sass-mq/mq";			// [d]
