@@ -1,6 +1,6 @@
 {
   "name": "@mangopear-framework/sass-toolkit",
-  "version": "0.3.0",
+  "version": "0.4.2",
   "description": "SASS tooling for Mangopear framework",
   "author": "Andi North <andi@mangopear.co.uk>",
   "license": "GPL-3.0",

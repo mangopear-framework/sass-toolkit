@@ -87,7 +87,7 @@ $rem-base-font-size: $mangui-base-font-size--unitless !default;
 
 		@else {
 			$unit: unit($value);												// [d]
-			$val: parseint($value);												// [d]
+			$val: ($value / ($value * 0 + 1));									// [d]
 
 
 			@if $unit == 'px' {													// [e]
